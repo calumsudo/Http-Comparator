@@ -1,8 +1,9 @@
 Comparison Result:
 [
   %{
+    header_order: :different_order,
     method: {:same, "POST"},
-    order: :different_order,
+    overall_order: :different_order,
     request_headers: [
       added_headers: ["x-sectrace"],
       removed_headers: ["Cache-Control"],
@@ -87,8 +88,9 @@ Comparison Result:
      }
    }},
   %{
+    header_order: :same_order,
     method: {:same, "GET"},
-    order: :different_order,
+    overall_order: :different_order,
     request_headers: [
       added_headers: [],
       removed_headers: [],
