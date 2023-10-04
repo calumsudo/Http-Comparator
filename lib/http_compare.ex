@@ -1,12 +1,11 @@
 defmodule HttpCompare do
-  @spec compare(String.t(), String.t()) :: any
   def compare(json1, json2) do
     data1 = Jason.decode!(json1)
     data2 = Jason.decode!(json2)
 
     {comparisons, unmatched} = compare_data_sets(data1, data2)
-    new_sets = Enum.map(unmatched, fn req -> {:request_added, req} end)
 
+    new_sets = Enum.map(unmatched, fn req -> {:request_added, req} end)
     comparisons ++ new_sets
   end
 
