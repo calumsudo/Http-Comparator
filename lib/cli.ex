@@ -1,4 +1,4 @@
-defmodule HttpComparator.CLI do
+defmodule HttpCompare.CLI do
   def main(_args) do
     IO.puts("This program accepts 2 Json files, it will compare the two\n" <>
        "assuming that the first Json entered is the original and the second\n" <>
@@ -13,7 +13,7 @@ defmodule HttpComparator.CLI do
     json1 = File.read!(file1)
     json2 = File.read!(file2)
 
-    result = HttpComparator.compare(json1, json2)
+    result = HttpCompare.compare(json1, json2)
 
     IO.puts("Comparison Result:")
     IO.inspect(result)

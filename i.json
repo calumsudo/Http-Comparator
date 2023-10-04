@@ -1,0 +1,26 @@
+[
+  {
+    "request": {
+      "url": "http://example.com",
+      "method": "GET",
+      "headers": [{"name": "Header1", "value": "Value1"}]
+    },
+    "response": {
+      "status_code": 200,
+      "status_text": "OK",
+      "headers": [{"name": "ResponseHeader1", "value": "ResponseValue1"}, {"name2": "ResponseHeader1", "value2": "ResponseValue1"}]
+    }
+  },
+  {
+    "request": {
+      "url": "http://example2.com",
+      "method": "POST",
+      "headers": [{"name": "Header1", "value": "Value1"}]
+    },
+    "response": {
+      "status_code": 200,
+      "status_text": "OK",
+      "headers": [{"name": "ResponseHeader1", "value": "ResponseValue1"}, {"name2": "ResponseHeader1", "value2": "ResponseValue1"}]
+    }
+  }
+]

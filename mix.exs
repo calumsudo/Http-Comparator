@@ -14,7 +14,7 @@ defmodule HttpCompare.MixProject do
 
   defp escript_config do
     [
-      main_module: HttpComparator.CLI
+      main_module: HttpCompare.CLI
     ]
   end
 
